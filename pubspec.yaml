@@ -1,0 +1,28 @@
+name: greens_icons
+version: 0.0.1
+author: James Hurford <terrasea@gmail.com>
+description: A set of SVG icons for use in Polymer Dart iron-icon elements
+homepage: https://github.com/nzgreens/greens_icons_dart.git
+environment:
+  sdk: '>=1.2.0 <2.0.0'
+dependencies:
+  polymer: ">=1.0.0-rc.2 <2.0.0"
+  polymer_interop: ">=1.0.0-rc.1 <2.0.0"
+  web_components: ">=0.12.0+3 <0.13.0"
+  reflectable: '>=0.3.1 <0.4.0'
+dev_dependencies:
+  browser: any
+  test: any
+transformers:
+- web_components:
+    entry_points:
+    - test/index.html
+    - example/index.html
+- reflectable:
+    entry_points:
+    - test/test.dart
+    - example/main.dart
+- test/pub_serve:
+    $include: test/test.dart
+- $dart2js:
+    minify: true

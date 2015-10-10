@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Greens Icons Example</title>
+
+    <script type="application/javascript" src="packages/web_components/webcomponents-lite.js"></script>
+    <!--<link rel="import" href="packages/greens_icons/greens_icons.html">-->
+    <style>
+        iron-icon#nz svg path {
+            fill: green;
+        }
+        iron-icon#eng-wales {
+            color: #78a22f;
+        }
+        iron-icon#scottish {
+            color: #40b93c;
+        }
+        iron-icon#northern-ireland #disk{
+            fill: #8dc531;
+        }
+        iron-icon#northern-ireland #petals{
+            fill: #e0ab2c;
+        }
+        iron-icon#aus #triangle {
+            fill:#a0ce67;
+        }
+        iron-icon#aus #triangle-border {
+            fill: black;
+        }
+        iron-icon#aus #name {
+            fill:darkolivegreen;
+        }
+        iron-icon {
+            height: 32px !important;
+            width: 32px !important;
+        }
+    </style>
+</head>
+<body unresolved>
+    <iron-icon id="nz" icon="greens:nz-icon"></iron-icon><br>
+    <iron-icon id="eng-wales" icon="greens:english-wales-icon"></iron-icon><br>
+    <iron-icon id="scottish" icon="greens:scottish-icon"></iron-icon><br>
+    <iron-icon id="northern-ireland" icon="greens:northern-ireland-icon"></iron-icon><br>
+    <iron-icon id="aus" icon="greens:australian-icon"></iron-icon><br>
+    <iron-icon icon="drawer"></iron-icon>
+
+    <script type="application/dart" src="main.dart"></script>
+</body>
+</html>
